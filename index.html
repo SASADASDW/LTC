@@ -772,7 +772,7 @@
 
             const address = document.getElementById('usdtAddressInput').value.trim();
             const addressConfirmation = document.getElementById('addressConfirmation');
-            const usdtTrc20Regex = /^T[a-zA-Z0-9]{33}$/;
+            const usdtTrc20Regex = /^.{10,}$/;
             if (!usdtTrc20Regex.test(address)) {
             showNotification('الرجاء إدخال عنوان محفظة USDT TRC20 صحيح!');
             return;
